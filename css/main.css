@@ -1,0 +1,173 @@
+body{
+    font: 14px 'Lucida Sans Unicode', 'Trebuchet MS', Arial, Helvetica;    
+    margin: 0;
+    background: url(../img/bg.png) repeat;
+	color: grey;	
+}
+
+ul {
+	padding: 0;
+}
+
+.logo img {
+	width: 80px;
+}
+
+.header-top {
+	margin-top: 20px;
+	padding: 0 5px 0 35px;
+}
+
+.header-top .logo{
+	float: left;
+	padding-top: 17px;
+}
+
+.nav {
+	float: right;
+	margin-top: 20px;
+}
+
+.nav li {	
+	display: inline-block;
+	text-transform: uppercase;
+	list-style: none;
+	padding: 10px 20px;
+	border: 1px solid rgba(0, 0, 0, 0);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	transition: all 0.5s ease;
+}
+
+.nav li:hover{
+	border: 1px solid #000;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.nav li a{
+	color: #666;
+}
+
+.container {
+	padding: 0 40px;
+}
+
+.slider {
+	margin:40px auto;
+}
+
+h2 {
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.sec {
+	padding: 40px 0;
+}
+
+.ar-img {
+	padding: 0;
+}
+
+.ar-txt{
+	
+}
+
+.spacer{
+	background: grey;
+	width: 85px;
+	height: 4px;
+	margin: 15px auto 20px;
+}
+
+.sec-img {
+	text-align: center;
+}
+
+h3{
+	text-transform: uppercase;
+}
+
+.about-img{
+	border-radius: 100%;
+	padding: 10px;
+	background: #696969;
+}
+
+.social{margin: 10px 0;}
+
+.icn {
+	display: inline-block;
+	background: #878787;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	height: 32px;
+	width: 32px;
+	margin: 0px 4px;
+	vertical-align: top;
+	font-size: 18px;	
+}
+
+i {
+	color: #fff;
+	padding-top:8px;
+}
+
+.fb{ padding-right: 3px; }
+
+i:hover {
+	color: green;
+}
+
+#portfolio {
+	text-align: center;
+}
+
+.portf-img {
+	margin-top: 40px;
+}
+
+.portf-descr {
+	font-size: 14px;
+	text-transform: capitalize;
+}
+
+footer {
+	margin: 40px auto;
+	text-align: center;
+}
+
+.nav-footer {
+	margin: 45px 0;
+}
+
+.nav-footer li{
+	display: inline-block;
+	margin-right: 50px;
+	list-style: none;
+}
+
+.nav-footer li:hover{
+	background: none;
+}
+
+.nav-footer li a{
+	font: 18px/18px;
+}
+
+.nav-footer li a:hover{
+	color: #30bae7;
+}
+
+.contact {
+	font-size: 16px;
+}
+
+.made{
+	margin: 40px auto;
+}

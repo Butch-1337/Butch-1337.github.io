@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Авторизация</title>
+	<link rel="stylesheet" href="css/font-awesome-4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/login-reg.css">
+</head>
+<body>
+
+	<div class="back">
+		<a href="index.html">
+			<div class="icn"><i class="fa fa-arrow-left"></i></div>									
+		</a>
+	</div>
+
+	<section id="login" class="login">
+	
+		<form  method="post">
+			<h1>Авторизация</h1>
+			<fieldset id="inputs">
+				<input id="username" type="text"
+				pattern="^[\w-]{3,16}$"
+				title="Латинские буквы и цифры а также _ и - (от 3 до 16 символов)"
+				placeholder="Логин" autofocus required>   
+				<input id="password" type="password"
+				pattern="^.{6,18}$"
+				title="Любые символы (от 6 до 18 символов)"
+				placeholder="Пароль" required>
+			</fieldset>
+			<fieldset id="actions">
+				<input type="submit" class="submit" value="ВОЙТИ">
+				<a href="">Забыли пароль?</a><a href="register.html">Регистрация</a>
+			</fieldset>
+		</form>
+		
+		<section class="social">
+			<div class="social-txt"> Или войдите через социальные сети:</div>
+			<a href="#">
+				<div class="icn"><i class="fa fa-facebook fb"></i></div>									
+			</a>
+			<a href="#">
+				<div class="icn"><i class="fa fa-vk"></i></div>									
+			</a>
+			<a href="#">
+				<div class="icn"><i class="fa fa-twitter"></i></div>									
+			</a>
+			<a href="#">
+				<div class="icn"><i class="fa fa-linkedin"></i></div>									
+			</a>
+		</section>
+		
+	</section>
+
+	
+</body>
+</html>

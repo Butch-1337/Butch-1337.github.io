@@ -29,6 +29,7 @@
 		</header>
 		<section class="profile">
 			<h2>Ваш профиль</h2>
+						
 			<div class="row">
 				<div class="col1">
 					<div class="pf-col1-wrap">
@@ -36,11 +37,134 @@
 							<img src="img/anonymous.jpg" alt="ava">
 						</div>
 						<div class="btn-wrap">
-							<button class="button"> Редактировать профиль</button>
-						</div>
+							<a href="#prof-edit-foto">
+								<button class="button"> Редактировать фото</button>
+							</a>
+						</div>	
+							<!-- Модальное окно -->
+								<a href="#" class="overlay" id="prof-edit-foto"></a>
+								<div class="popup">
+									 Здесь вы можете разместить любое содержание, текст с картинками или видео! 
+									<a class="close" title="Закрыть" href="#close"></a>
+								</div>
 					</div>		
 				</div>
 				<div class="col2 pf-content">
+				
+					<div class="tabs">
+						<input id="tab1" type="radio" name="tabs" checked>
+						<label for="tab1" title="Вкладка 1">Общая информация</label>
+					 
+						<input id="tab2" type="radio" name="tabs">
+						<label for="tab2" title="Вкладка 2">Адресс</label>
+					 
+						<input id="tab3" type="radio" name="tabs">
+						<label for="tab3" title="Вкладка 3">Безопасность</label>
+					 
+						<input id="tab4" type="radio" name="tabs">
+						<label for="tab4" title="Вкладка 4">Активность</label>
+						
+						<input id="tab5" type="radio" name="tabs">
+						<label for="tab5" title="Вкладка 4">История</label>
+					 
+						<section class="tab-sn" id="content1">
+							<table>
+								<tbody>
+									<tr>
+										<td>День рождения:</td>
+										<td>27 октября</td>
+									</tr>			
+									<tr>
+										<td>Пол:</td>
+										<td>мужской</td>
+									</tr>
+									<tr>
+										<td>Телефон:</td>
+										<td>232-32-323</td>
+									</tr>
+									<tr>
+										<td>Email:</td>
+										<td>anonymous@mail.com</td>
+									</tr>
+								</tbody>
+							</table>
+						</section>  
+						<section class="tab-sn" id="content2">
+							<table>
+								<tbody>
+									<tr>
+										<td>Страна:</td>
+										<td>Украина</td>
+									</tr>
+									<tr>
+										<td>Город:</td>
+										<td>Киев</td>
+									</tr>
+									<tr>
+										<td>Район:</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Улица:</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</section> 
+						<section class="tab-sn" id="content3">
+							<table>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td></td>
+									</tr>			
+									<tr>
+										<td>2</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</section> 
+						<section class="tab-sn" id="content4">
+							<p>
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, ratione maiores odio et totam culpa aspernatur dicta blanditiis iusto odit nostrum voluptates ab voluptas. Nisi quod neque fugiat excepturi nihil.</span>
+							<span>Commodi, quos, ratione fugiat dolorem harum illum ea repellat perspiciatis reiciendis ullam tempore facere corporis blanditiis deserunt placeat optio officiis nostrum voluptas labore expedita. Aliquam, tempore omnis eum enim optio.</span>
+							<span>Dolorum, eos, eius, quam commodi voluptate eveniet accusamus accusantium distinctio repudiandae vel ad consectetur ipsam cum error sed quos adipisci aliquid odio alias impedit delectus iure doloremque reprehenderit saepe ipsa?</span>
+							<span>Animi, nihil, odit laboriosam blanditiis aperiam aliquam sit debitis dolorem velit provident. Iste, eos, ad, sunt vero aspernatur labore quasi illo natus quidem consequuntur molestiae repellat nostrum officia quo repudiandae.</span>
+							<span>Nemo, magni dicta error tempore nesciunt harum perferendis vel eius enim tempora. Odit, reprehenderit ut atque aliquam rerum dicta provident beatae eius nemo labore placeat non enim necessitatibus ratione maiores.</span>
+							</p>
+						</section>
+						<section class="tab-sn" id="content5">
+							<p>
+							  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia sapiente veritatis corporis ea error excepturi explicabo modi? Optio, eaque, impedit libero maxime animi repudiandae natus officia quos rerum porro.</span>
+							  <span>Consequuntur, dignissimos, harum id et hic dolor maxime reiciendis facere ipsum voluptas cupiditate eveniet molestias optio earum ab tenetur quae dicta provident esse inventore quos incidunt amet maiores excepturi praesentium.</span>
+							  <span>Placeat, laudantium velit vero distinctio itaque iure similique voluptatem adipisci repellat non exercitationem laboriosam. Delectus, voluptatem, minima necessitatibus sit accusamus dolores amet nobis odit ea! Minima neque obcaecati tempora repellat.</span>
+							</p>
+						</section>    						
+					</div>
+					
+					<div class="btn-wrap">
+						<a href="#prof-edit">
+							<button class="button"> Редактировать профиль</button>
+						</a>
+					</div>
+
+					
+					<!-- Модальное окно -->
+						<a href="#" class="overlay" id="prof-edit"></a>
+						<div class="popup">
+							 Здесь вы можете разместить любое содержание, текст с картинками или видео! 
+							<a class="close" title="Закрыть" href="#close"></a>
+						</div>
+						 				
 				</div>
 			</div>
 				

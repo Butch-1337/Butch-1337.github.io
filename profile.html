@@ -6,7 +6,7 @@
 	<title>Профиль</title>
 	<link rel="stylesheet" href="css/bootstrap/bootstrap-grid-3.3.1.min.css" />
 	<link rel="stylesheet" href="css/font-awesome-4.2.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/login-reg.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -37,14 +37,90 @@
 							<img src="img/anonymous.jpg" alt="ava">
 						</div>
 						<div class="btn-wrap">
-							<a href="#prof-edit-foto">
-								<button class="button"> Редактировать фото</button>
+							<a href="#prof-edit">
+								<button class="button"> Редактировать профиль</button>
 							</a>
 						</div>	
 							<!-- Модальное окно -->
-								<a href="#" class="overlay" id="prof-edit-foto"></a>
+								<a href="#" class="overlay" id="prof-edit"></a>
 								<div class="popup">
-									 Здесь вы можете разместить любое содержание, текст с картинками или видео! 
+									<h2>Редактирование профиля </h2>
+									<form method="post">
+										<label> Выберите фото для аватара:
+											<input type="file" name="edit">
+										</label>
+										
+										<label> Дата рождения:
+											<input type="date" name="edit">
+										</label>
+										
+										<label> Пол:
+											<select class="form-control" id="sel0">
+												<option>Мужской</option>
+												<option>Женский</option>
+											</select>
+										</label>
+
+										<label> Введите номер телефона:
+											<input type="tel" name="edit">
+										</label>
+
+										<label> Введите Email:
+											<input type="email" name="edit">
+										</label>										
+										
+										<label> Страна:
+											<select class="form-control" id="sel1">
+												<option>Украина</option>
+												<option>Республика Беларусь</option>
+												<option>Польша</option>
+												<option>....</option>
+											</select>
+										</label>
+
+										<label> Город:
+											<select class="form-control" id="sel2">
+												<option>Киев</option>
+												<option>Львов</option>
+												<option>Одесса</option>											
+												<option>Харьков</option>
+												<option>Днепропетровск</option>
+												<option>....</option>
+											</select>
+										</label>
+
+										<label> Район:
+											<input type="text" name="edit">
+										</label>
+
+										<label> Улица:
+											<input type="text" name="edit">
+										</label>
+
+										<label> Защита данных:
+											<select class="form-control" id="sel3">
+												<option>Использовать HTTPS</option>
+												<option>Нет</option>
+											</select>
+										</label>
+
+										<label> Скрыть почту:
+											<select class="form-control" id="sel4">
+												<option>Да</option>
+												<option>Нет</option>
+											</select>
+										</label>
+
+										<label> Скрыть номер телефона:
+											<select class="form-control" id="sel5">
+												<option>Да</option>
+												<option>Нет</option>
+											</select>
+										</label>
+										
+										<input type="submit" value="Сохранить" class="button">
+									</form>
+
 									<a class="close" title="Закрыть" href="#close"></a>
 								</div>
 					</div>		
@@ -102,33 +178,29 @@
 									</tr>
 									<tr>
 										<td>Район:</td>
-										<td></td>
+										<td>Печерск</td>
 									</tr>
 									<tr>
 										<td>Улица:</td>
-										<td></td>
+										<td>Мазепы</td>
 									</tr>
 								</tbody>
 							</table>
 						</section> 
 						<section class="tab-sn" id="content3">
 							<table>
-								<tbody>
+								<tbody class="secure">
 									<tr>
-										<td>1</td>
-										<td></td>
+										<td>Защита данных:</td>
+										<td>Использовать HTTPS</td>
 									</tr>			
 									<tr>
-										<td>2</td>
-										<td></td>
+										<td>Скрыть Email:</td>
+										<td>Да</td>
 									</tr>
 									<tr>
-										<td>3</td>
-										<td></td>
-									</tr>
-									<tr>
-										<td>4</td>
-										<td></td>
+										<td>Скрыть номер телефона:</td>
+										<td>Да</td>
 									</tr>
 								</tbody>
 							</table>
@@ -150,20 +222,6 @@
 							</p>
 						</section>    						
 					</div>
-					
-					<div class="btn-wrap">
-						<a href="#prof-edit">
-							<button class="button"> Редактировать профиль</button>
-						</a>
-					</div>
-
-					
-					<!-- Модальное окно -->
-						<a href="#" class="overlay" id="prof-edit"></a>
-						<div class="popup">
-							 Здесь вы можете разместить любое содержание, текст с картинками или видео! 
-							<a class="close" title="Закрыть" href="#close"></a>
-						</div>
 						 				
 				</div>
 			</div>

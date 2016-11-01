@@ -172,7 +172,9 @@ footer {
 	margin: 40px auto;
 }
 
+/*///////////////////////////////////////*/
 /*////////////////Profile////////////////*/
+/*///////////////////////////////////////*/
 
 .profile {
 	min-width: 1020px;
@@ -291,7 +293,7 @@ td {
 	color: #696969;
 	border-top: 1px solid transparent;
 	padding: 8px;
-	width: 150px;
+	width: 200px;
 	transition: all 0.5s ease;
 }
 
@@ -311,7 +313,11 @@ tr:hover td {
 	background: #c0c0c0;	
 }
 
+.secure td {width: 300px;}
+
 /*////////////////Модальное окно////////////////*/
+
+.white{ background: #fff;}
 
 /* Базовые стили слоя затемнения и модального окна  */
 .overlay {
@@ -407,6 +413,9 @@ tr:hover td {
     content: "X";
     text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
     font-size: 12px;
+	position: absolute;
+	right: 25%;
+	top: -10%;
 }
 .close:hover {
     background-color: rgba(252, 20, 0, 0.8);
@@ -416,6 +425,7 @@ tr:hover td {
          -o-transform: rotate(360deg);
             transform: rotate(360deg);    
 }
+
 /* изображения внутри окна */
 .popup img {
     width: 100%;
@@ -448,17 +458,7 @@ tr:hover td {
     max-width: 600px;
     width: 100%;
 }
-.popup h2 { /* заголовок 2 */
-    margin: 0;
-    color: #008000;
-    padding: 5px 0px 10px;
-    text-align: left;
-    text-shadow: 1px 1px 3px #adadad;
-    font-weight: 500;
-    font-size: 1.4em;
-    font-family: 'Tahoma', Arial, sans-serif;
-    line-height: 1.3;
-}
+
 /* параграфы */
 .popup p {margin: 0; padding: 5px 0}
 
@@ -552,4 +552,33 @@ tr:hover td {
   .tabs label {
     padding: 15px;
   }
+}
+
+.popup label{
+	display: block;
+}
+
+.popup input:not([type="submit"]), select
+{
+    background: #f1f1f1 no-repeat;
+    padding: 5px 5px 5px 10px;
+    margin: 0 0 10px 0;
+    /*width: 353px; /* 353 + 2 + 45 = 400 */
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+    -webkit-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+    box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+}
+
+.popup input:focus
+{
+    background-color: #fff;
+    border-color: #e8c291;
+    outline: none;
+    -moz-box-shadow: 0 0 0 1px #e8c291 inset;
+    -webkit-box-shadow: 0 0 0 1px #e8c291 inset;
+    box-shadow: 0 0 0 1px #e8c291 inset;
 }

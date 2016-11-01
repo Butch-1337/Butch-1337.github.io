@@ -378,7 +378,7 @@ tr:hover td {
         -ms-transform: translate(-50%, 0);
          -o-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
-    top: 20%;
+    top: 10%;
 }
 /* формируем кнопку закрытия */
 .close {
@@ -554,10 +554,6 @@ tr:hover td {
   }
 }
 
-.popup label{
-	display: block;
-}
-
 .popup input:not([type="submit"]), select
 {
     background: #f1f1f1 no-repeat;
@@ -581,4 +577,21 @@ tr:hover td {
     -moz-box-shadow: 0 0 0 1px #e8c291 inset;
     -webkit-box-shadow: 0 0 0 1px #e8c291 inset;
     box-shadow: 0 0 0 1px #e8c291 inset;
+}
+
+.field {
+	float: left;
+	width: 100%;
+}
+
+.popup label {
+	float:left;
+	text-align: right;
+	line-height: 25px;
+	width: 220px;
+	margin-right: 5px; /* чтобы к меткам не прилипали поля */
+}
+
+.form-al {
+	float:left;
 }

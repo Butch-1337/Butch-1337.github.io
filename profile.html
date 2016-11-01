@@ -46,40 +46,43 @@
 								<div class="popup">
 									<h2>Редактирование профиля </h2>
 									<form method="post">
-										<label> Выберите фото для аватара:
-											<input type="file" name="edit">
-										</label>
-										
-										<label> Дата рождения:
-											<input type="date" name="edit">
-										</label>
-										
-										<label> Пол:
-											<select class="form-control" id="sel0">
+									
+									<div class="form-al">
+										<div class="field">
+											<label for="f1"> Выберите фото для аватара:</label>
+											<input id="f1" type="file" name="edit">
+										</div>
+										<div class="field">
+											<label for="f2"> Дата рождения:</label>
+											<input id="f2" type="date" name="edit">	
+										</div>
+										<div class="field">
+											<label  for="f3"> Пол: </label>
+											<select id="f3"  class="form-control" id="sel0">
 												<option>Мужской</option>
 												<option>Женский</option>
 											</select>
-										</label>
-
-										<label> Введите номер телефона:
-											<input type="tel" name="edit">
-										</label>
-
-										<label> Введите Email:
-											<input type="email" name="edit">
-										</label>										
-										
-										<label> Страна:
-											<select class="form-control" id="sel1">
+										</div>
+										<div class="field">
+											<label for="f4"> Введите номер телефона:</label>
+											<input id="f4"  type="tel" name="edit">	
+										</div>
+										<div class="field">
+											<label for="f5"> Введите Email:</label>
+											<input id="f5"  type="email" name="edit">
+										</div>
+										<div class="field">
+											<label  for="f6"> Страна:</label>
+											<select id="f6"  class="form-control" id="sel1">
 												<option>Украина</option>
 												<option>Республика Беларусь</option>
 												<option>Польша</option>
 												<option>....</option>
-											</select>
-										</label>
-
-										<label> Город:
-											<select class="form-control" id="sel2">
+											</select>	
+										</div>
+										<div class="field">
+											<label  for="f7"> Город:</label>
+											<select id="f7"  class="form-control" id="sel2">
 												<option>Киев</option>
 												<option>Львов</option>
 												<option>Одесса</option>											
@@ -87,38 +90,50 @@
 												<option>Днепропетровск</option>
 												<option>....</option>
 											</select>
-										</label>
-
-										<label> Район:
-											<input type="text" name="edit">
-										</label>
-
-										<label> Улица:
-											<input type="text" name="edit">
-										</label>
-
-										<label> Защита данных:
-											<select class="form-control" id="sel3">
+										</div>
+										<div class="field">
+											<label for="f8"> Район:</label>
+											<input id="f8"  type="text" name="edit">
+										</div>
+										<div class="field">
+											<label for="f10"> Улица:</label>
+											<input id="f10"  type="text" name="edit">
+										</div>
+										<div class="field">
+											<label  for="f11"> Защита данных:</label>
+											<select id="f11"  class="form-control" id="sel3">
 												<option>Использовать HTTPS</option>
 												<option>Нет</option>
 											</select>
-										</label>
-
-										<label> Скрыть почту:
-											<select class="form-control" id="sel4">
+										</div>
+										<div class="field">
+											<label  for="f12"> Скрыть почту:</label>
+											<select id="f12"  class="form-control" id="sel4">
 												<option>Да</option>
 												<option>Нет</option>
 											</select>
-										</label>
-
-										<label> Скрыть номер телефона:
-											<select class="form-control" id="sel5">
+										</div>
+										<div class="field">
+											<label  for="f13"> Скрыть номер телефона:</label>
+											<select id="f13"  class="form-control" id="sel5">
 												<option>Да</option>
 												<option>Нет</option>
 											</select>
-										</label>
-										
+										</div>
+										<div class="field">
+											<label for="f9"> Сменить пароль:</label>
+											<input id="f9"  type="password" name="edit">
+										</div>
+										<div class="field">
+											<label for="f14"> Подтвердить смену пароля:</label>
+											<input id="f14"  type="password" name="edit">
+										</div>
+									</div>
+									
+									<fieldset id="submit">
 										<input type="submit" value="Сохранить" class="button">
+									</fieldset>
+										
 									</form>
 
 									<a class="close" title="Закрыть" href="#close"></a>

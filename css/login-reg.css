@@ -79,6 +79,10 @@ a {
 	height: 480px;
 }
 
+.restore {
+	top: 40%;
+	height: 330px;
+}
 /*--------------------*/
 
 h1
@@ -89,7 +93,7 @@ h1
     color: #666;
     margin: 0 0 30px 0;
     letter-spacing: 4px;
-    font: normal 26px/1 Verdana, Helvetica;
+    font: normal 26px Verdana, Helvetica;
     position: relative;
 }
 
@@ -195,6 +199,10 @@ fieldset
   border: none;
 }
 
+.send {
+	width: 180px;
+}
+
 #register {
 	text-align: center;
 	margin: 25px auto;
@@ -213,6 +221,10 @@ fieldset
     margin-left: 10px;
 }
 
+#actions a:hover {
+	color: #30bae7;
+}
+
 /*--------------------*/
 
 #back
@@ -229,7 +241,7 @@ fieldset
 	text-align: center;
 }
 
-.social-txt {
+.social-txt, .restore-txt {
 	margin: 10px auto;
 	font-size: 14px;
 	color: #666;

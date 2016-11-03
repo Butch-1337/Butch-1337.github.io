@@ -37,21 +37,42 @@
 							<img src="img/anonymous.jpg" alt="ava">
 						</div>
 						<div class="btn-wrap">
-							<a href="#prof-edit">
-								<span class="button"> Редактировать профиль</span>
+							<a href="#foto-edit">
+								<span class="button">Редактировать фото</span>
 							</a>
 						</div>	
 							<!-- Модальное окно -->
+								<a href="#" class="overlay" id="foto-edit"></a>
+								<div class="popup">
+									<h2>Редактирование фото </h2>
+
+									<form method="post">
+										<div class="field">		
+											<label for="f1"> Выберите фото для аватара:</label>
+											<input id="f1" type="file" name="edit">
+										</div>
+
+										<fieldset id="submit">
+											<input type="submit" value="Сохранить" class="button">
+										</fieldset>		
+									</form>
+
+									<a class="close" title="Закрыть" href="#close"></a>
+								</div>
+					</div>
+					<div class="profile-edit-del">
+						<div class="btn-wrap-edit">
+							<a href="#prof-edit">
+								<span class="button">Редактировать профиль</span>
+							</a>
+						</div>	
+								<!-- Модальное окно -->
 								<a href="#" class="overlay" id="prof-edit"></a>
 								<div class="popup">
 									<h2>Редактирование профиля </h2>
 									<form method="post">
 									
 									<div class="form-al">
-										<div class="field">
-											<label for="f1"> Выберите фото для аватара:</label>
-											<input id="f1" type="file" name="edit">
-										</div>
 										<div class="field">
 											<label for="f2"> Дата рождения:</label>
 											<input id="f2" type="date" name="edit">	
@@ -138,7 +159,12 @@
 
 									<a class="close" title="Закрыть" href="#close"></a>
 								</div>
-					</div>		
+						<div class="btn-wrap">
+							<a href="#">
+								<span class="button prof-del-btn">Удалить профиль</span>
+							</a>
+						</div>	
+					</div>
 				</div>
 				<div class="col2 pf-content">
 				
@@ -221,20 +247,74 @@
 							</table>
 						</section> 
 						<section class="tab-sn" id="content4">
-							<p>
-							<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, ratione maiores odio et totam culpa aspernatur dicta blanditiis iusto odit nostrum voluptates ab voluptas. Nisi quod neque fugiat excepturi nihil.</span>
-							<span>Commodi, quos, ratione fugiat dolorem harum illum ea repellat perspiciatis reiciendis ullam tempore facere corporis blanditiis deserunt placeat optio officiis nostrum voluptas labore expedita. Aliquam, tempore omnis eum enim optio.</span>
-							<span>Dolorum, eos, eius, quam commodi voluptate eveniet accusamus accusantium distinctio repudiandae vel ad consectetur ipsam cum error sed quos adipisci aliquid odio alias impedit delectus iure doloremque reprehenderit saepe ipsa?</span>
-							<span>Animi, nihil, odit laboriosam blanditiis aperiam aliquam sit debitis dolorem velit provident. Iste, eos, ad, sunt vero aspernatur labore quasi illo natus quidem consequuntur molestiae repellat nostrum officia quo repudiandae.</span>
-							<span>Nemo, magni dicta error tempore nesciunt harum perferendis vel eius enim tempora. Odit, reprehenderit ut atque aliquam rerum dicta provident beatae eius nemo labore placeat non enim necessitatibus ratione maiores.</span>
-							</p>
+							<table id="activity">
+								<thead>
+									<th>Время</th>
+									<th>Событие</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>3/11/2016 [14:50:32]</td>
+										<td>Вход в аккаунт с IP 73.38.200.100</td>
+									</tr>
+									<tr>
+										<td>3/11/2016 [14:45:11]</td>
+										<td>Вход в аккаунт с IP 73.38.200.100</td>
+									</tr>
+									<tr>
+										<td>3/11/2016 [14:30:37]</td>
+										<td>Вход в аккаунт с IP 73.38.200.100</td>
+									</tr>
+									<tr>
+										<td>3/11/2016 [14:20:14]</td>
+										<td>Вход в аккаунт с IP 73.38.200.100</td>
+									</tr>
+									<tr>
+										<td>3/11/2016 [14:15:39]</td>
+										<td>Вход в аккаунт с IP 73.38.200.100</td>
+									</tr>
+								</tbody>
+							</table>
 						</section>
 						<section class="tab-sn" id="content5">
-							<p>
-							  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia sapiente veritatis corporis ea error excepturi explicabo modi? Optio, eaque, impedit libero maxime animi repudiandae natus officia quos rerum porro.</span>
-							  <span>Consequuntur, dignissimos, harum id et hic dolor maxime reiciendis facere ipsum voluptas cupiditate eveniet molestias optio earum ab tenetur quae dicta provident esse inventore quos incidunt amet maiores excepturi praesentium.</span>
-							  <span>Placeat, laudantium velit vero distinctio itaque iure similique voluptatem adipisci repellat non exercitationem laboriosam. Delectus, voluptatem, minima necessitatibus sit accusamus dolores amet nobis odit ea! Minima neque obcaecati tempora repellat.</span>
-							</p>
+							<table id="history">
+								<tbody>
+									<tr>
+										<td>Вася</td>
+										<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+										Aut, blanditiis, sed, error inventore libero maiores ab nisi
+										aliquid officiis enim voluptatibus quisquam sunt dolorem veniam
+										nobis ex earum officia quas.Lorem ipsum dolor sit amet, consectetur
+										adipisicing elit. Cupiditate facere maxime beatae quae quos atque
+										ad blanditiis!
+										</td>
+									</tr>
+									<tr>
+										<td>Петя</td>
+										<td>Ipsa, sed, quis perspiciatis beatae voluptatem vitae pariatur
+										quo iste culpa veniam laboriosam maiores sunt? Velit, tempora nam
+										optio explicabo voluptas eaque.</td>
+									</tr>
+									<tr>
+										<td>Маша</td>
+										<td>Vitae, consequatur sed aliquid blanditiis exercitationem cumque
+										ducimus inventore voluptates nemo ipsum autem dolore omnis repellendus
+										error aut nobis delectus eius magnam.</td>
+									</tr>
+									<tr>
+										<td>Вася</td>
+										<td>Itaque, sed, non, iusto quidem sint neque nam aut doloremque quos
+										eaque adipisci molestias ipsam nobis. Nisi, rerum nesciunt illum
+										corporis hic.</td>
+									</tr>
+									<tr>
+										<td>Вова</td>
+										<td>Labore, accusantium, odio, ipsam officia veniam est voluptate
+										aspernatur quos iusto vero placeat aliquam! Tenetur, consequatur
+										laborum dicta quo in impedit voluptatem.</td>
+									</tr>
+								</tbody>
+							</table>
 						</section>    						
 					</div>
 						 				

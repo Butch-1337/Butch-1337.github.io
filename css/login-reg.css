@@ -30,7 +30,7 @@ a {
     margin: -150px 0 0 -230px;
     padding: 30px;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     z-index: 0;
     -moz-border-radius: 3px;
@@ -59,7 +59,7 @@ a {
           0 7px 0 rgba(0, 0, 0, .2);
 }
 
-#login:before
+.login:before
 {
     content: '';
     position: absolute;
@@ -75,12 +75,10 @@ a {
 }
 
 .register {
-	top: 30%;
 	height: 480px;
 }
 
 .restore {
-	top: 40%;
 	height: 330px;
 }
 /*--------------------*/
@@ -271,3 +269,59 @@ i {
 i:hover {
 	color: green;
 }
+
+/* === Form hints === */
+.field{
+	position: relative;
+}
+
+.form_hint {
+	background: #28921f;
+	border-radius: 3px 3px 3px 3px;
+	color: white;
+	margin-left:8px;
+	padding: 1px 6px;
+	z-index: 999; /* hints stay above all other elements */
+	position: absolute; /* allows proper formatting if hint is two lines */
+	bottom: 6px;
+	left: 396px;
+	display: none;
+}
+
+.form_hint::before {
+	content: "\25C0";
+	color: #28921f;
+	position: absolute;
+	top: 1px;
+	left: -6px;
+}
+
+input:focus + .form_hint {display: inline-block;}
+
+#f1 .form_hint{
+	width: 140px;
+} 
+
+#f2 .form_hint{
+	width: 300px;
+} 
+
+.notvalid {
+	display: inline;
+	background: #d45252;
+}
+
+.notvalid::before {
+	content: "\25C0";
+	color: #d45252;
+	position: absolute;
+	top: 1px;
+	left: -6px;
+}
+
+#f2 .notvalid{
+	width: 140px;
+} 
+
+/*input + .form_hint {background: #28921f;}
+input + .form_hint::before {color:#28921f;}*/

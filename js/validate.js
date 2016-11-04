@@ -57,8 +57,7 @@ function validate(form){
 	}
 	
 	if (verLogin || verEmail) {
-		/*alert("Новый пароль будет отправлен на вашу почту");
-		return true;*/
+		alert("Новый пароль будет отправлен на вашу почту");
 		xhr.open('POST', form.action);
 		xhr.send(data);
 		return false;

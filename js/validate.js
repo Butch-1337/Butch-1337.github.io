@@ -1,5 +1,4 @@
-
-function validate(evt){
+function validate(formRpwd){
 	var login = document.getElementById("login");
 	var email = document.getElementById("email");
 	var mailHint = document.getElementById("mail-hint");
@@ -7,6 +6,8 @@ function validate(evt){
 	var empty = !login.value && !email.value;
 	var verLogin = /^[\w-]{3,16}$/.test(login.value); // true or false
 	var verEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email.value); // true or false
+	var data = new FormData(formRpwd);
+	var xhr = new XMLHttpRequest();
 	
 	function togMailHint(errMsg) {
 		mailHint.classList.add('notvalid');
@@ -57,7 +58,16 @@ function validate(evt){
 	
 	if (verLogin || verEmail) {
 		alert("Новый пароль будет отправлен на вашу почту");
-		return true;
+		xhr.open('POST', formRpwd.action);
+		xhr.send(data);
+		if (xhr.status != 200) {
+			  // обработать ошибку
+			  alert('Ошибка ' + xhr.status + ': ' + xhr.statusText); // пример вывода: 404: Not Found
+			} else {
+			  // вывести результат
+			  alert( xhr.responseText ); // responseText -- текст ответа.
+		}
+		return false;
 	}
 	
 }

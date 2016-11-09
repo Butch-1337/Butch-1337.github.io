@@ -1,0 +1,59 @@
+<NotepadPlus>
+    <Project name="Butch-1337.github.io">
+        <Folder name="css">
+            <Folder name="bootstrap">
+                <File name="css\bootstrap\bootstrap-grid-3.3.1.min.css" />
+            </Folder>
+            <Folder name="font-awesome-4.2.0">
+                <Folder name="css">
+                    <File name="css\font-awesome-4.2.0\css\font-awesome.min.css" />
+                </Folder>
+                <Folder name="fonts">
+                    <File name="css\font-awesome-4.2.0\fonts\fontawesome-webfont.eot" />
+                    <File name="css\font-awesome-4.2.0\fonts\fontawesome-webfont.svg" />
+                    <File name="css\font-awesome-4.2.0\fonts\fontawesome-webfont.ttf" />
+                    <File name="css\font-awesome-4.2.0\fonts\fontawesome-webfont.woff" />
+                    <File name="css\font-awesome-4.2.0\fonts\FontAwesome.otf" />
+                </Folder>
+            </Folder>
+            <File name="css\login-reg.css" />
+            <File name="css\main.css" />
+            <File name="css\slider.css" />
+        </Folder>
+        <Folder name="img">
+            <File name="img\1.jpg" />
+            <File name="img\2.jpg" />
+            <File name="img\3.jpg" />
+            <File name="img\4.jpg" />
+            <File name="img\a02.png" />
+            <File name="img\anonymous.jpg" />
+            <File name="img\au-logo.png" />
+            <File name="img\author.jpg" />
+            <File name="img\bg.png" />
+            <File name="img\img1.jpg" />
+            <File name="img\img2.jpg" />
+            <File name="img\img3.jpg" />
+            <File name="img\loading.gif" />
+            <File name="img\portfolio1.png" />
+            <File name="img\portfolio2.png" />
+            <File name="img\portfolio3.png" />
+            <File name="img\portfolio4.png" />
+        </Folder>
+        <Folder name="js">
+            <File name="js\common.js" />
+            <File name="js\jssor.slider-21.1.6.min.js" />
+            <File name="js\main.js" />
+            <File name="js\validate.js" />
+        </Folder>
+        <Folder name="less">
+            <File name="less\login-reg.less" />
+            <File name="less\main.less" />
+        </Folder>
+        <File name="index.html" />
+        <File name="login.html" />
+        <File name="profile.html" />
+        <File name="README.md" />
+        <File name="register.html" />
+        <File name="restore_password.html" />
+    </Project>
+</NotepadPlus>

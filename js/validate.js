@@ -60,6 +60,13 @@ function validate(formRpwd){
 		alert("Новый пароль будет отправлен на вашу почту");
 		xhr.open('POST', formRpwd.action);
 		xhr.send(data);
+		if (xhr.status != 200) {
+			  // обработать ошибку
+			  alert('Ошибка ' + xhr.status + ': ' + xhr.statusText); // пример вывода: 404: Not Found
+			} else {
+			  // вывести результат
+			  alert( xhr.responseText ); // responseText -- текст ответа.
+		}
 		return false;
 	}
 	

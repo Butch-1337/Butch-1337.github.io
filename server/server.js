@@ -6,12 +6,13 @@ function accept(req, res) {
 
   res.writeHead(200, {
     'Content-Type': 'text/plain',
-    'Cache-Control': 'no-cache'
+    'Cache-Control': 'no-cache',
+	'Access-Control-Allow-Origin': '*'
   });
 
-  res.end("OK");
+  res.end("Данные успешно отправлены на сервер!");
 }
 
-http.createServer(accept).listen(3000);
+http.createServer(accept).listen(8080);
 
-console.log('Server running on port 3000');
+console.log('Server running on port 8080');

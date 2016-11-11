@@ -7,7 +7,6 @@ function validate(formRpwd){
 	var verLogin = /^[\w-]{3,16}$/.test(login.value); // true or false
 	var verEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email.value); // true or false
 	var data = new FormData(formRpwd);
-	var xhr = new XMLHttpRequest();
 	
 	function togMailHint(errMsg) {
 		mailHint.classList.add('notvalid');
@@ -57,16 +56,19 @@ function validate(formRpwd){
 	}
 	
 	if (verLogin || verEmail) {
-		alert("Новый пароль будет отправлен на вашу почту");
+		var xhr = new XMLHttpRequest();
 		xhr.open('POST', formRpwd.action);
-		xhr.send(data);
-		if (xhr.status != 200) {
-			  // обработать ошибку
-			  alert('Ошибка ' + xhr.status + ': ' + xhr.statusText); // пример вывода: 404: Not Found
-			} else {
-			  // вывести результат
-			  alert( xhr.responseText ); // responseText -- текст ответа.
+
+		xhr.onload = function() {
+			alert( this.responseText );
 		}
+
+		xhr.onerror = function() {
+			alert( 'Ошибка ' + this.status );
+		}
+
+		xhr.send();
+		
 		return false;
 	}
 	

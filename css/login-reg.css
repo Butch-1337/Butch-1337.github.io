@@ -15,10 +15,10 @@ a {
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
   background: -webkit-linear-gradient(top, #fff, #eee);
   background: linear-gradient(to bottom, #fff, #eee);
-  height: 300px;
+  height: 330px;
   width: 400px;
   margin: -150px 0 0 -230px;
-  padding: 30px;
+  padding: 20px;
   position: absolute;
   top: 30%;
   left: 50%;
@@ -42,9 +42,10 @@ a {
 }
 .register {
   height: 480px;
+  padding: 15px 20px 25px;
 }
 .restore {
-  height: 330px;
+  height: 300px;
 }
 /*--------------------*/
 h1 {
@@ -52,10 +53,14 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   color: #666;
-  margin: 0 0 30px 0;
+  margin: 0 0 10px 0;
   letter-spacing: 4px;
   font: normal 26px Verdana, Helvetica;
   position: relative;
+}
+#popup h3 {
+  font: normal 18px/24px Verdana, Helvetica;
+  text-align: center;
 }
 /*--------------------*/
 fieldset {
@@ -64,19 +69,24 @@ fieldset {
   margin: 0;
 }
 /*--------------------*/
-#inputs input {
+input {
   background: #f1f1f1 no-repeat;
   padding: 15px 15px 15px 30px;
   margin: 0 0 10px 0;
   width: 353px;
-  /* 353 + 2 + 45 = 400 */
+  /* 353 + 2 + 15 + 30 = 400 */
   border: 1px solid #ccc;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   -webkit-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
   box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
 }
-#inputs input:focus {
+#inputsReg input {
+  padding: 10px 15px 10px 15px;
+  width: 368px;
+  /* 368 + 2 + 15 + 15 = 400 */
+}
+input:focus {
   background-color: #fff;
   border-color: #e8c291;
   outline: none;
@@ -128,7 +138,7 @@ fieldset {
 }
 #register {
   text-align: center;
-  margin: 25px auto;
+  margin-top: 5px;
 }
 .reg {
   width: 200px;
@@ -152,14 +162,19 @@ fieldset {
   color: #999;
 }
 .social {
-  margin-top: 20px;
   text-align: center;
 }
 .social-txt,
-.restore-txt {
-  margin: 10px auto;
+.restore-txt,
+.login-txt {
+  margin-bottom: 5px;
   font-size: 14px;
   color: #666;
+}
+.reg-txt {
+  font-size: 14px;
+  color: #666;
+  text-align: left;
 }
 .icn {
   display: inline-block;
@@ -192,15 +207,20 @@ i:hover {
   -webkit-border-radius: 3px;
   border-radius: 3px;
   color: white;
+  text-align: center;
   margin-left: 8px;
   padding: 1px 6px;
+  width: 300px;
   z-index: 999;
   /* hints stay above all other elements */
   position: absolute;
   /* allows proper formatting if hint is two lines */
-  bottom: 6px;
+  bottom: 45%;
   left: 396px;
   display: none;
+}
+#loginHint {
+  width: 320px;
 }
 .form_hint::before {
   content: "\25C0";
@@ -214,9 +234,11 @@ input:focus + .form_hint {
 }
 #f1 .form_hint {
   width: 140px;
+  bottom: 6px;
 }
 #f2 .form_hint {
   width: 300px;
+  bottom: 6px;
 }
 .notvalid {
   display: inline;
@@ -231,4 +253,13 @@ input:focus + .form_hint {
 }
 #f2 .notvalid {
   width: 140px;
+}
+#reg-soc {
+  margin-top: 0;
+}
+#login-soc {
+  margin-top: 0;
+}
+#actions #anc-login {
+  float: left;
 }

@@ -1,5 +1,16 @@
 'use strict';
 
+var registerForm = document.getElementById("register");
+var loginForm = document.getElementById("loginForm");
+
+if (registerForm) {
+	registerForm.onsubmit = function() {return validateReg(this);}	
+}
+
+if (loginForm) {
+	loginForm.onsubmit = function() {return validateLogin(this);}	
+}
+
 function togHint(hint, input, errMsg) {
 	var normVal = hint.innerHTML;
 	hint.classList.add('notvalid');
@@ -17,10 +28,11 @@ function ajaxReq(requestObject, action, modalTxt, anc) {
 	xhr.setRequestHeader('Content-Type', 'application/json');
 	xhr.send(JSON.stringify(requestObject));
 
-	xhr.onerror = 
-	modalPopup(modalTxt, anc, 'Ошибка связи с сервером: ' + xhr.status);	
-	
-	xhr.onload = function () {
+	xhr.onerror = function() {
+		modalPopup(modalTxt, anc, 'Ошибка связи с сервером: ' + xhr.status);	
+	}
+		
+	xhr.onload = function() {
 		var response = JSON.parse(xhr.responseText);
 	
 		if (this.status == 401) {

@@ -1,6 +1,10 @@
 @br1: 5px;
 @br2: 15px;
 @br-btn: 3px;
+.close-size(@d: 20px) {
+	width: @d;
+	height: @d;
+}
 
 body{
     font: 14px 'Lucida Sans Unicode', 'Trebuchet MS', Arial, Helvetica;    
@@ -292,14 +296,14 @@ footer {
 .prof-del-btn {
 	margin-top: 10px;
 	background-color: #e6190f;
-    background: -webkit-linear-gradient(to bottom, #e6190f, #5d120d);
+    background: linear-gradient(to bottom, #e6190f, #5d120d);
 	color: #590909;
 	border-color: #590909;
 }
 
 .prof-del-btn:hover, .prof-del-btn:focus {
 	background-color: #5d120d;
-    background: -webkit-linear-gradient(to bottom, #5d120d, #e6190f);	
+    background: linear-gradient(to bottom, #5d120d, #e6190f);	
 }
 
 .pf-content{
@@ -417,7 +421,7 @@ tr:hover td {
             transition: transform 0.6s ease-out;
 }
 /* активируем модальный блок */
-.overlay:target+.popup {
+.overlay:target+.popup, .show {
     -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
          -o-transform: translate(-50%, 0);
@@ -428,8 +432,7 @@ tr:hover td {
 .close {
     top: -10px;
     right: -10px;
-    width: 20px;
-    height: 20px;
+	.close-size;
     position: absolute;
     padding: 0;
     border: 2px solid #ccc;
@@ -452,6 +455,11 @@ tr:hover td {
          -o-transition: all ease .8s;
             transition: all ease .8s;
 }
+
+#reg-close {
+	.close-size(15px);
+}
+
 .close:before {
     color: rgba(255, 255, 255, 0.9);
     content: "X";
@@ -489,6 +497,7 @@ tr:hover td {
     float: right;
     margin: 5px 0 5px 15px;
 }
+
 /* элементы м-медиа, фреймы */
 .popup embed, 
 .popup iframe {
@@ -505,6 +514,48 @@ tr:hover td {
 
 /* параграфы */
 .popup p {margin: 0; padding: 5px 0}
+
+.popup input:not([type="submit"]), select
+{
+    background: #f1f1f1 no-repeat;
+    padding: 2px 5px 2px 10px;
+    margin: 0 0 10px 0;
+	width: 300px;
+    border: 1px solid #ccc;
+    -moz-border-radius: @br1;
+    -webkit-border-radius: @br1;
+    border-radius: @br1;
+    -moz-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+    -webkit-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+    box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+}
+
+.popup input:focus
+{
+    background-color: #fff;
+    border-color: #e8c291;
+    outline: none;
+    -moz-box-shadow: 0 0 0 1px #e8c291 inset;
+    -webkit-box-shadow: 0 0 0 1px #e8c291 inset;
+    box-shadow: 0 0 0 1px #e8c291 inset;
+}
+
+.field {
+	float: left;
+	width: 100%;
+}
+
+.popup label {
+	float:left;
+	text-align: right;
+	line-height: 25px;
+	width: 220px;
+	margin-right: 5px; /* чтобы к меткам не прилипали поля */
+}
+
+.form-al {
+	float:left;
+}
 
 /*////////////////Табы////////////////*/
 
@@ -596,47 +647,5 @@ tr:hover td {
   .tabs label {
     padding: 15px;
   }
-}
-
-.popup input:not([type="submit"]), select
-{
-    background: #f1f1f1 no-repeat;
-    padding: 2px 5px 2px 10px;
-    margin: 0 0 10px 0;
-    /*width: 353px; /* 353 + 2 + 45 = 400 */
-    border: 1px solid #ccc;
-    -moz-border-radius: @br1;
-    -webkit-border-radius: @br1;
-    border-radius: @br1;
-    -moz-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
-    -webkit-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
-    box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
-}
-
-.popup input:focus
-{
-    background-color: #fff;
-    border-color: #e8c291;
-    outline: none;
-    -moz-box-shadow: 0 0 0 1px #e8c291 inset;
-    -webkit-box-shadow: 0 0 0 1px #e8c291 inset;
-    box-shadow: 0 0 0 1px #e8c291 inset;
-}
-
-.field {
-	float: left;
-	width: 100%;
-}
-
-.popup label {
-	float:left;
-	text-align: right;
-	line-height: 25px;
-	width: 220px;
-	margin-right: 5px; /* чтобы к меткам не прилипали поля */
-}
-
-.form-al {
-	float:left;
 }
 

@@ -25,7 +25,7 @@ function ajaxReq(requestObject, action, modalTxt, anc) {
 	
 		if (this.status == 401) {
 			modalPopup(modalTxt, anc, 'Окончено время сессии.');
-			setTimeout(logOut(), 3000);
+			setTimeout(logOut, 3000);
 		}
 		
 		else if (this.status == 404 &&

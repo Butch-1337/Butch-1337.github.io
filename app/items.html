@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Лоты</title>
+	<link rel="stylesheet" href="css/bootstrap/bootstrap-grid-3.3.1.min.css" />
+	<link rel="stylesheet" href="css/font-awesome-4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="container">
+		<header>	
+			<div id="head-top" class="header-top clearfix">
+				<a class="logo" href="index.html"><img src="img/au-logo.png" alt="Logo"></a>
+				<nav class="nav">
+					<ul>
+						<li><a href="../index.html">Главная</a></li>
+						<li><a href="../items.html">Лоты</a></li>
+						<li><a href="../login.html">Вход</a></li>
+						<li><a href="../register.html">Регистрация</a></li>
+					</ul>
+				</nav>
+			</div>	
+		</header>
+		<app id="app">
+			<section id = "lotSc">
+				<h2>Лоты</h2>
+				<select name="" id="lotSelect">
+					<option value="All">Все категории</option>
+					<option value="PC">ПК</option>
+					<option value="Notebook">Ноутбуки</option>
+					<option value="Tablet">Таблеты</option>
+					<option value="Phone">Телефоны</option>
+				</select>
+				<select name="" id="lotBrandSelect">
+					<option value="All">Все производители</option>
+					<option value="Acer">Acer</option>
+					<option value="Apple">Apple</option>
+					<option value="Artline">Artline</option>
+					<option value="Asus">Asus</option>
+					<option value="Lenovo">Lenovo</option>
+				</select>
+				<div id="lotList">
+					<!-- List of lots generated 
+					
+						<div id="row#" class="row mrow">
+							Template
+						</div> 
+					-->				
+				</div>			
+			</section>
+		</app>
+		<footer>
+			<h2 class="title">Контакты</h2>
+			<div class="nav-footer">
+				<ul>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Google+</a></li>
+					<li><a href="#">LinkedIn</a></li>
+					<li><a href="#">GitHub</a></li>
+				</ul>
+			</div>
+			<div class="row contact">
+				<div class="col-md-6">Email: <a href="#">email@smth.com</a></div>
+				<div class="col-md-6">Телефон: 222-322-222</div>
+			</div>
+			<div class="row made">Made by
+				<a href="https://github.com/Butch-1337">Butch_1337</a>
+			</div>
+		</footer>
+	</div>
+		
+	<template id="lotListTmpl">
+		<div class="col-md-3">
+			<div class="lot" id="">
+				<div>
+					<a class="lot-a-img" href="#">
+						<img class="lot-img" id="" src="">
+					</a>
+				</div>
+				<div>
+					<a class="lot-tit" id="" href="#"></a>
+				</div>
+				<div class="lot-cat" id=""></div>
+			</div>
+		</div>
+	</template>
+		
+	<script src="js/items.js"></script>
+
+</body>
+</html>

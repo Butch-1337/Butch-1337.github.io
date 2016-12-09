@@ -363,6 +363,18 @@ tr:hover td {
 
 .secure td {width: 300px;}
 
+#tableBody td:nth-child(2n+1){
+	width: 10%;
+}
+
+#tableBody td:nth-child(2n){
+	width: 20%;
+}
+
+#tableBody td:nth-child(3n){
+	width: 70%;
+}
+
 /*////////////////Модальное окно////////////////*/
 
 .white{ background: #fff;}
@@ -649,3 +661,76 @@ tr:hover td {
   }
 }
 
+/*///////////////////////////////////////*/
+/*//////////////////Items////////////////*/
+/*///////////////////////////////////////*/
+
+.mrow{
+	margin: 20px 0;
+}
+
+.lot {
+	border: 1px solid rgba(0, 0, 0, 0);
+	height: 200px;
+	margin: 5px auto;
+	-webkit-border-radius: @br1;
+	-moz-border-radius: @br1;
+	border-radius: @br1;
+	background: #fff;
+	text-align: center;
+	transition: all 0.5s ease;
+}
+
+.lot:hover{
+	border: 1px solid #000;
+}
+
+.lot-d:hover{
+	border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.lot-img{
+	margin: 5px;
+	width: 100px;
+	height: 135px;
+}
+
+.lot-tit a {
+	font-size: 16px;
+}
+
+
+#lotSelect{
+	margin-left: 15px;
+}
+
+.lot-d-img{
+	width: 180px;
+	height: 180px;
+	margin: 10px 0;
+}
+
+.lot-d-descr{
+	
+	text-align: left;
+}
+
+.pre-bg{
+	position: fixed;
+	width: 100%; 
+	height: 100%; 
+	overflow: visible; 
+	background: #eaeaea;
+	z-index: 900;
+}
+
+.preloader{
+	position: fixed;
+	top: 35%;
+	left: 45%;
+	z-index: 1000;
+}
+
+.pre-img{
+	width: 80px;
+}

@@ -3,6 +3,14 @@
 var registerForm = document.getElementById("register");
 var loginForm = document.getElementById("loginForm");
 
+const WRONG_NAME = 'Неправильный формат ФИО!';
+const WRONG_LOGIN = 'Неправильный формат логина!';
+const WRONG_PASS = 'Неправильный формат пароля!';
+const DIFF_PASS = 'Пароли должны совпадать!';
+const WRONG_EMAIL = 'Неправильный формат Email!';
+const EMPTY = 'Введите данные в одно из полей';
+
+
 if (registerForm) {
 	registerForm.onsubmit = function() {return validateReg(this);}	
 }
@@ -41,13 +49,13 @@ function ajaxReq(requestObject, action, modalTxt, anc) {
 		}
 		
 		else if (this.status == 404 &&
-		response.errorMessage == "User not found") {
+		response.errorMessage == 'User not found') {
 			modalPopup(modalTxt, anc, 'Ошибка авторизации: ' +
 			'неправильный логин или пароль');
 		}
 		
 		else if (this.status == 500 &&
-		response.errorMessage == "User already exist") {
+		response.errorMessage == 'User already exist') {
 			modalPopup(modalTxt, anc, 'Пользователь уже существует');	
 		}
 		
@@ -112,28 +120,28 @@ function validateReg(formReg){
 	var verValPassword = /^.{6,18}$/.test(passwordValInp.value);
 		
 	if (!verName) {
-		togHint(nameHint, nameInp, 'Неправильный формат ФИО!');
+		togHint(nameHint, nameInp, WRONG_NAME);
 	}	
 		
 	if (!verLogin) {
-		togHint(loginHint, loginInp, 'Неправильный формат логина!');	
+		togHint(loginHint, loginInp, WRONG_LOGIN);	
 	}
 	
 	if (!verEmail) {
-		togHint(mailHint, emailInp, 'Неправильный формат Email!');	
+		togHint(mailHint, emailInp, WRONG_EMAIL);	
 	}
 	
 	if (!verPassword) {
-		togHint(passwordHint, passwordInp, 'Неправильный формат пароля!');	
+		togHint(passwordHint, passwordInp, WRONG_PASS);	
 	}
 	
 	if (!verValPassword) {
-		togHint(passwordValHint, passwordValInp, 'Неправильный формат пароля!');	
+		togHint(passwordValHint, passwordValInp, WRONG_PASS);	
 	}
 	
 	if (passwordInp.value != passwordValInp.value) {
-		togHint(passwordValHint, passwordValInp, 'Пароли должны совпадать!');
-		togHint(passwordHint, passwordInp, 'Пароли должны совпадать!');
+		togHint(passwordValHint, passwordValInp, DIFF_PASS);
+		togHint(passwordHint, passwordInp, DIFF_PASS);
 	}
 		
 	if (verLogin && verEmail && verPassword && verValPassword && 
@@ -170,11 +178,11 @@ function validateLogin(formLogin){
 	
 		
 	if (!verLogin) {
-		togHint(loginHint, loginInp, 'Неправильный формат логина!');	
+		togHint(loginHint, loginInp, WRONG_LOGIN);	
 	}
 	
 	if (!verPassword) {
-		togHint(passwordHint, passwordInp, 'Неправильный формат пароля!');	
+		togHint(passwordHint, passwordInp, WRONG_PASS);	
 	}
 		
 	if (verLogin && verPassword) {
@@ -207,24 +215,24 @@ function validateRestore(formRpwd){
 	var verEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(emailInp.value); // true or false
 	
 	if (empty) {
-		togHint(mailHint, emailInp, 'Введите данные в одно из полей');
-		togHint(loginHint, loginInp, 'Введите данные в одно из полей');
+		togHint(mailHint, emailInp, EMPTY);
+		togHint(loginHint, loginInp, EMPTY);
 		return false;
 	}
 	
 	if (!verLogin && !empty && !emailInp.value) {
-		togHint(loginHint, loginInp, 'Неправильный формат логина!');
+		togHint(loginHint, loginInp, WRONG_LOGIN);
 		return false;
 	}
 	
 	if (!verEmail && !empty && !loginInp.value) {
-		togHint(mailHint, emailInp, 'Неправильный формат Email!');
+		togHint(mailHint, emailInp, WRONG_EMAIL);
 		return false;
 	}
 	
 	if (!verLogin && !verEmail) {
-		togHint(mailHint, emailInp, 'Неправильный формат Email!');
-		togHint(loginHint, loginInp, 'Неправильный формат логина!');
+		togHint(mailHint, emailInp, WRONG_EMAIL);
+		togHint(loginHint, loginInp, WRONG_LOGIN);
 		return false;
 	}
 	

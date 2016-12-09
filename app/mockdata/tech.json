@@ -1,0 +1,102 @@
+{  
+  "items":[  
+    {  
+      "id":0,
+      "name":"Imac Retina 27'", 
+	  "description": "IPS Retina (5120x2880) 5K LED, глянцевый / Intel Core i5 (3.2 - 3.6 ГГц) / RAM 8 ГБ / HDD 1 ТБ / AMD Radeon R9 M390, 2 ГБ / Без ОД / LAN / Bluetooth / Wi-Fi / веб-камера / кард-ридер / Mac OS X El Capitan / 9.54 кг / серебристый / клавиатура + мышь",
+	  "category": "PC",
+	  "brand": "Apple"
+	},
+    {  
+      "id":1,
+      "name":"Imac 24'",
+	  "description": "Core 2 Duo 2.4GHz/3GB/250GB/Radeon HD 2600 256MB/1920*1200/Wi-Fi",
+	  "category": "PC",
+	  "brand": "Apple"
+    },
+	{  
+      "id":2,
+      "name":"ARTLINE Gaming X44",
+	  "description": "AMD Athlon II X4 860K (3.7 ГГц) / RAM 8 ГБ / HDD 1 TБ / AMD Radeon R7 360, 2 ГБ / DVD±RW / LAN / без ОС",
+	  "category": "PC",
+	  "brand": "Artline"	  
+    },
+	{  
+      "id":3,
+      "name":"Lenovo IdeaCentre 700",
+	  "description": "Intel Core i5-6400 (2.7 ГГц) / RAM 8 ГБ / HDD 1 ТБ / nVidia GeForce GTX750 TI, 2 ГБ / DVD+/-RW / Windows 10 Home 64bit / 8.38 кг / черный",
+	  "category": "PC",
+	  "brand": "Lenovo"
+    },
+	{  
+      "id":4,
+      "name":"Everest Game 9085",
+	  "description": "Intel Core i7-6700 (3.4 ГГц) / RAM 16 ГБ / SSD 120 ГБ + HDD 2 ТБ / nVidia GeForce GTX 970, 4 ГБ / DVD±RW / LAN / кардридер / без ОС",
+	  "category": "PC",
+	  "brand": "Everest"
+    },
+	{  
+      "id":5,
+      "name":"ARTLINE Gaming X95 v03",
+	  "description": "Intel Core i7-6700K (4.0 ГГц) / RAM 64 ГБ DDR4 / HDD 2 ТБ + SSD 480 ГБ / nVidia GeForce GTX1080, 8 ГБ / DVD+/-RW / LAN / кардридер / Без ОС",
+	  "category": "PC",
+	  "brand": "Artline"
+    },
+	{  
+      "id":6,
+      "name":"Asus V220ICGK-BC005X",
+	  "description": "Экран 21.5 (1920x1080) Full HD LED / Intel Core i3-6100U (2.3 ГГц) / RAM 4 ГБ / HDD 1 ТБ / nVidia GeForce 930M, 2 ГБ / DVD Super Multi / LAN / Wi-Fi / кардридер / веб-камера / Windows 10 Home 64bit / 7 кг / черный",
+	  "category": "PC",
+	  "brand": "Asus"	  
+    },
+	{  
+      "id":7,
+      "name":"Lenovo IdeaCentre 700-22",
+	  "description": "Экран 21.5 (1920x1080) Full HD / Intel Pentium G4400T (2.9 ГГц) / RAM 4 ГБ / HDD 500 ГБ / nVidia GeForce GT930A, 2 ГБ / DVD Super Multi / LAN / Wi-Fi / Bluetooth / кардридер / веб-камера / DOS / 7.5 кг / черный / клавиатура + мышь",
+	  "category": "PC",
+	  "brand": "Lenovo"	
+    },
+	{  
+      "id":8,
+      "name":"Asus ROG G752VL",
+	  "description": "Экран 17.3 IPS (1920x1080) Full HD LED, матовый / Intel Core i7-6700HQ (2.6 - 3.5 ГГц) / RAM 32 ГБ / SSD 256 ГБ + HDD 2 ТБ / nVidia GeForce GTX 965M, 2 ГБ / DVD Blu Ray Combo / LAN / Wi-Fi / Bluetooth / веб-камера / Windows 10 / 4.3 кг / мышь",
+	  "category": "Notebook",
+	  "brand": "Asus"	
+    },
+	{  
+      "id":9,
+      "name":"Acer Predator G9-591",
+	  "description": "Экран 15.6 IPS (1920x1080) Full HD LED, матовый / Intel Core i7-6700HQ (2.6 - 3.5 ГГц) / RAM 16 ГБ / SSD 256 ГБ + HDD 2 ТБ / nVidia GeForce GTX 980M, 4 ГБ / DVD Super Multi / LAN / Wi-Fi / Bluetooth / веб-камера / Linpus / 3.4 кг / черный",
+	  "category": "Notebook",
+	  "brand": "Acer"	
+    },
+	{  
+      "id":10,
+      "name":"Apple iPhone 7 32GB Silver",
+	  "description": "Экран (4.7, IPS, 1334x750)/ Apple A10 Fusion/ основная камера: 12 Мп, фронтальная камера: 7 Мп/ RAM 2 ГБ/ 32 ГБ встроенной памяти/ 3G/ LTE/ GPS/ Nano-SIM/ iOS 10",
+	  "category": "Phone",
+	  "brand": "Apple"	
+    },
+	{  
+      "id":11,
+      "name":"Astro S450 RX",
+	  "description": "Экран (4.5, IPS, 960х540)/ MediaTek MT6582 (1.3 ГГц)/ основная камера: 8 Мп, фронтальная камера: 2 Мп/ RAM 1 ГБ/ 8 ГБ встроенной памяти + microSD/SDHC (до 32 ГБ)/ 3G/ A-GPS/ поддержка 2х SIM-карт (Mini-SIM)/ Android 5.1 (Lollipop)/ 2300 мА*ч",
+	  "category": "Phone",
+	  "brand": "Astro"	
+    },
+	{  
+      "id":12,
+      "name":"Lenovo K5 Plus",
+	  "description": "Экран (5, IPS, 1920x1080)/ Qualcomm Snapdragon 616 (1.5 ГГц)/ основная камера: 13 Мп, фронтальная камера: 5 Мп/ RAM 2 ГБ/ 16 ГБ встроенной памяти + microSD/SDHC (до 32 ГБ)/ 3G/ LTE/ GPS/ поддержка 2х SIM-карт (Micro-SIM)/ Android 5.1 (Lollipop) / 2750 мА*ч",
+	  "category": "Phone",
+	  "brand": "Lenovo"	
+    },
+	{  
+      "id":13,
+      "name":"Cube T8 Ultimate",
+	  "description": "Экран 8 IPS (1920x1200) емкостный, MultiTouch / MediaTek MT8783 (1.3 ГГц) / RAM 2 ГБ / 16 ГБ встроенной памяти + поддержка карт памяти microSD (до 128 ГБ) / 3G / LTE / Wi-Fi / Bluetooth 4.0 / основная камера 5 Мп, фронтальная 2 Мп / GPS / поддержка 2-х СИМ-карт / Android 5.1 (Lollipop) / 312 г",
+	  "category": "Tablet",
+	  "brand": "Cube"
+    }
+  ]
+}

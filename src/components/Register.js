@@ -139,7 +139,7 @@ class Register extends Component {
           <a href="#" className="overlay" id="over"></a>
           <div className="popup" id="popup">
             <h3 id="modalTxt">
-              Вы вернулись к регистрации нового пользователя.
+              
             </h3>
             <a onClick={handleClose} className="close" title="Закрыть" href="#close"></a>
           </div>

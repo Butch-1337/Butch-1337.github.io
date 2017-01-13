@@ -5,7 +5,7 @@ class FormField extends React.Component {
     constructor() {
       super();
       this.state = {
-		valid: false
+		    valid: false
       };
       this.onFieldChange = this.onFieldChange.bind(this);
     }
@@ -16,8 +16,8 @@ class FormField extends React.Component {
       this.props.changes(check, e.target.value);
 
 	    this.setState({
-          valid: check
-        })
+        valid: check
+      })
    }
 
     render() {
@@ -32,7 +32,7 @@ class FormField extends React.Component {
                   autoFocus={this.props.autoFocus} 
                 />
                 <span id={this.props.hintId} 
-					  className={"form_hint "+(this.state.valid?"":"notvalid")}>
+					            className={"form_hint "+(this.state.valid ? "" : "notvalid")}>
                   {this.props.hintText}
                 </span>
             </div>

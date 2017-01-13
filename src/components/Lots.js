@@ -5,8 +5,8 @@ import load from './services/load';
 
 class Lots extends Component {
   
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         
         this.state = {
             lotsData: [],
@@ -31,13 +31,13 @@ class Lots extends Component {
 
     updateCategory(e) {
         this.setState({
-          category: e.target.value  
+          category: e.target.value
         });
     }
 
     updateBrand(e) {
         this.setState({
-          brand: e.target.value  
+          brand: e.target.value
         });
     }
 
